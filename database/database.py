@@ -1,6 +1,6 @@
 import sqlite3
 import os
-DB_PATH = "C:/Users/sdas4/Desktop/dz2/database/employee_management.db"
+DB_PATH = "C:/Users/sdas4/Desktop/dz2/Development-database/database/employee_management.db"
 
 if not os.path.exists(DB_PATH):
     print("Ошибка: База данных не найдена. Поместите файл employee_management.db в папку database.")

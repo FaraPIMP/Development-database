@@ -150,16 +150,3 @@ class EmployeeManager(QWidget):
             QMessageBox.information(self, 'Успех', 'Отчет успешно сгенерирован и сохранен как "employee_report.pdf".')
         except Exception as e:
             QMessageBox.critical(self, 'Ошибка', f'Произошла ошибка при генерации отчета: {str(e)}')
-
-    def show_help(self):
-        """Показать справку."""
-        msg = QMessageBox()
-        msg.setIcon(QMessageBox.Information)
-        msg.setText("Документация к ПО")
-        msg.setInformativeText(
-            "Это приложение для управления списком сотрудников.\n\n"
-            "Функции:\n1. Добавление сотрудника\n2. Изменение данных\n"
-            "3. Удаление сотрудника\n4. Генерация отчетов"
-        )
-        msg.setWindowTitle("Справка")
-        msg.exec_()
